@@ -4,9 +4,14 @@ $(document).ready(function() {
     var beverage = $("input#fav2").val();
     var vehicle = $("input#fav3").val();
     var movie = $("input#fav4").val();
-
+    var combination = [food, beverage, vehicle, movie];
+    var mix = [combination[1],combination[0],combination[2]];
+    mix.push(combination);
+    $("#out1").append(combination[0]);
+    $("#out2").append(combination[1]);
+    $("#out3").append(combination[2]);
+    $("#out4").append(combination[3]);
     event.preventDefault();
-    alert(food + beverage + vehicle + movie);
-
+      
   });
 });
