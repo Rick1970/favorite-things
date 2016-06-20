@@ -11,7 +11,12 @@ $(document).ready(function() {
     $("#out2").append(combination[1]);
     $("#out3").append(combination[2]);
     $("#out4").append(combination[3]);
+    var flavors = ["choclate", "vanilla", "salted carmel", "strawberry"];
+    $("#flav1").append(flavors[0]);
+    $("#flav2").append(flavors[1]);
+    $("#flav3").append(flavors[2]);
+    $("#flav4").append(flavors[3]);
     event.preventDefault();
-      
+
   });
 });
